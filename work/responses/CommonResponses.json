@@ -1,0 +1,586 @@
+[
+  {
+    "requestId": "68962b6864fc7d6ff7266c1f",
+    "userId": "a0687fe6dd5da634a58c1988",
+    "accountId": "",
+    "entityId": "9LKbWKhjDzuG5_pexnvyJF1hHL1R27VIDPwEIS95Zhhwbiuo6VZuL_AYOxPcpHsiLYf2jNscZgq1qeKwDGrivNpCmQ5WuNeNIJ_ZSgEg9khDBdrJFODtxbh-s41887fA",
+    "errorCode": 0,
+    "campaigns": []
+  },
+  {
+    "requestId": "68962ba7cc14ec02f94b9611",
+    "userId": "a0687fe6dd5da634a58c1988",
+    "accountId": "",
+    "entityId": "K4rsytVtReJ656phKFSWWFxedGzz40JnjTCMMTuwljcRX_mf3qt0gGHRKSr90BV2ZGB6oKHZVrTDPuRUgokegEh_1k4vPZoSz5-i0EbLpwdzXwBxfEQDnKRh4BQo5_D4",
+    "errorCode": 0,
+    "campaigns": [
+      {
+        "campaignId": "2fwcc",
+        "campaignName": "Cart Confirm - Consented - Current",
+        "campaignType": "ServerSide",
+        "campaignJavascriptContent": null,
+        "experienceId": "8GsXR",
+        "experienceName": "Co-Buy + Similar Items",
+        "experienceSourceCode": "",
+        "state": "Published",
+        "type": "ng",
+        "userGroup": "Default",
+        "templateNames": ["Static Rec Trays"],
+        "payload": {
+          "campaign": "2fwcc",
+          "experience": "8GsXR",
+          "fullProductIds": ["AN-45407437AD-000-015", "AN-100934744-000-015", "AN-4110972460095-000-015", "AN-98368624-000-015", "AN-4123957990005-000-015", "AN-100934777-000-015", "AN-93439776-000-015", "AN-4125972460005-000-015", "AN-4115912140003-000-015", "AN-95912424-000-015", "AN-98368608-000-015", "AN-4123652010053-000-015", "AN-96680376-000-015", "AN-4114556770051-000-015", "AN-4122971810001-000-015", "AN-4123957990008-000-015"],
+          "itemType": "Product",
+          "maxRatingBound": 5,
+          "maximumNumberOfProducts": 16,
+          "placement": {"displayPriority": 1, "label": "Cart Confirm", "placement": "cartConfirm"},
+          "recsConfig": {"itemType": "Product", "itemTypeIsRestricted": true, "maxResults": 16, "maxResultsIsRestricted": true, "onPageAnchorId": null, "onPageAnchorType": null, "recipe": {"id": "ToECf", "label": "PDP - Co-Buy + Similar Items"}, "recipeId": null},
+          "templateId": "staticRecTray",
+          "userGroup": "Test"
+        }
+      },
+      {
+        "campaignId": "pnF4F",
+        "campaignName": "PDP Bottom - Co-Buy - Consented",
+        "campaignType": "ServerSide",
+        "campaignJavascriptContent": null,
+        "experienceId": "SaBj3",
+        "experienceName": "PDP Bottom - Co-Buy",
+        "experienceSourceCode": "",
+        "state": "Published",
+        "type": "ng",
+        "userGroup": "Default",
+        "templateNames": ["Static Rec Trays"],
+        "payload": {
+          "campaign": "pnF4F",
+          "experience": "SaBj3",
+          "fullProductIds": ["AN-4130647160153-000-560", "AN-86767662-000-025", "AN-4114086690121-000-069", "AN-99758856-000-010", "AN-4130652010091-000-256", "AN-4130942140004-000-060", "AN-68798297-000-069", "AN-67685065-000-006", "AN-4130646420009-000-256", "AN-82903097-000-060"],
+          "itemType": "Product",
+          "maxRatingBound": 5,
+          "maximumNumberOfProducts": 10,
+          "placement": {"displayPriority": 4, "label": "PDP: Bottom Tray", "placement": "pdpBottom"},
+          "recsConfig": {"itemType": "Product", "itemTypeIsRestricted": true, "maxResults": 10, "maxResultsIsRestricted": true, "onPageAnchorId": null, "onPageAnchorType": null, "recipe": {"id": "QuPw1", "label": "Co-Buy Min Target 2 - IS Update 2"}, "recipeId": null},
+          "templateId": "staticRecTray",
+          "userGroup": "Test"
+        }
+      },
+      {
+        "campaignId": "vmcTE",
+        "campaignName": "PDP Top - Consented - Current (Test)",
+        "campaignType": "ServerSide",
+        "campaignJavascriptContent": null,
+        "experienceId": "3NPza",
+        "experienceName": "Old Recipe",
+        "experienceSourceCode": "",
+        "state": "Published",
+        "type": "ng",
+        "userGroup": "Default",
+        "templateNames": ["Static Rec Trays"],
+        "payload": {
+          "campaign": "vmcTE",
+          "experience": "3NPza",
+          "fullProductIds": ["AN-102520541-000-015", "AN-100892702-000-015", "AN-87389912-000-015", "AN-4114326950199-000-015", "AN-4114345140024-000-015", "AN-87570057-000-015", "AN-93752004-000-015", "AN-100908441-000-015", "AN-102374501-000-014", "AN-95925392-000-015", "AN-98054018-000-015", "AN-4139880890360-000-015", "AN-92699461-000-015", "AN-102374097-000-011", "AN-98563471-000-015", "AN-88303763-000-015"],
+          "itemType": "Product",
+          "maxRatingBound": 5,
+          "maximumNumberOfProducts": 16,
+          "placement": {"displayPriority": 3, "label": "PDP: Top Tray", "placement": "pdpTop"},
+          "recsConfig": {"itemType": "Product", "itemTypeIsRestricted": true, "maxResults": 16, "maxResultsIsRestricted": true, "onPageAnchorId": null, "onPageAnchorType": null, "recipe": {"id": "2jCHh", "label": "PDP Top - Co-Browse + Collab Filtering - category + color boost"}, "recipeId": null},
+          "templateId": "staticRecTray",
+          "userGroup": "Test"
+        }
+      }
+    ]
+  },
+  {
+    "requestId": "68962be55835961fab82aa80",
+    "userId": "a0687fe6dd5da634a58c1988",
+    "accountId": "",
+    "entityId": "xqhcdPhLt3oHBCpY9_-qG3jt49LhFYNoZ3K45BzHLcAJhquyq7ozKuBkzR1k2wyCY83VmD8PyH4QMhccCXLpN-P7OVdW14s5x6CyPpH0UAYhaPdIR8R30rdeVxEROAX4",
+    "errorCode": 0,
+    "campaigns": [
+      {
+        "campaignId": "KwZ6W",
+        "campaignName": "Cart (AN Web) - Items Under $25 - Consented",
+        "campaignType": "ServerSide",
+        "campaignJavascriptContent": null,
+        "experienceId": "3oIHf",
+        "experienceName": "Our Favorites Under $25 (AN) - Consented",
+        "experienceSourceCode": "",
+        "state": "Published",
+        "type": "ng",
+        "userGroup": "Default",
+        "templateNames": ["Static Rec Trays"],
+        "payload": {
+          "campaign": "KwZ6W",
+          "experience": "3oIHf",
+          "fullProductIds": ["AN-87664579-000-066", "AN-100610815-000-040", "AN-93260057-000-048", "AN-46288486-000-266", "AN-100177963-000-030", "AN-96994488-000-053", "AN-101955136-000-072", "AN-92032606-000-040", "AN-100808955-000-054", "AN-100679372-000-639", "AN-64001910-000-010", "AN-95908463-000-066", "AN-88447594-000-066", "AN-87245361-000-040", "AN-90789066-000-263", "AN-103250197-000-066"],
+          "itemType": "Product",
+          "maxRatingBound": 5,
+          "maximumNumberOfProducts": 16,
+          "placement": {"displayPriority": 1, "label": "Cart", "placement": "cart"},
+          "recsConfig": {"itemType": "Product", "itemTypeIsRestricted": true, "maxResults": 16, "maxResultsIsRestricted": true, "onPageAnchorId": null, "onPageAnchorType": null, "recipe": {"id": "Durrp", "label": "Items Under $25"}, "recipeId": null},
+          "templateId": "staticRecTray",
+          "userGroup": "Test"
+        }
+      }
+    ]
+  },
+  {
+    "requestId": "68962c2edb59d338b66e0c14",
+    "userId": "a0687fe6dd5da634a58c1988",
+    "accountId": "",
+    "entityId": "sd8NS9PeJO_bAYpjY2bme0xlPUcJU-u01-g5sxkhaaWLhD7zfiDYRhCiiJDhnMnCF_eo2ymLz2waz1mbTpEKGMc9PzqnjaJp_s-YfbHSIxYIwPA2emYnde5vv7Y6EwvI",
+    "errorCode": 0,
+    "campaigns": [
+      {
+        "campaignId": "mkyxD",
+        "campaignName": "Homepage Tray 2 - Trending (Most Viewed) - Consented",
+        "campaignType": "ServerSide",
+        "campaignJavascriptContent": null,
+        "experienceId": "qsau4",
+        "experienceName": "Homepage Tray 2 - Trending (Most Viewed) - Consented",
+        "experienceSourceCode": "",
+        "state": "Published",
+        "type": "ng",
+        "userGroup": "Default",
+        "templateNames": ["Dynamic Rec Trays"],
+        "payload": {
+          "campaign": "mkyxD",
+          "displayPriority": 3,
+          "dynamicPlacement": "hpg-tray-2",
+          "experience": "qsau4",
+          "fullProductIds": ["AN-4130647160153-000-560", "AN-86767662-000-025", "AN-4114086690121-000-069", "AN-99758856-000-010", "AN-4130652010091-000-256", "AN-68798297-000-069", "AN-4130942140004-000-060", "AN-67685065-000-006", "AN-4130646420009-000-256", "AN-82903097-000-060"],
+          "maxRatingBound": 5,
+          "maximumNumberOfProducts": 10,
+          "placement": {"displayPriority": 3, "placement": "hpg-tray-2"},
+          "recsConfig": {"itemType": "Product", "itemTypeIsRestricted": true, "maxResults": 10, "maxResultsIsRestricted": true, "onPageAnchorId": null, "onPageAnchorType": null, "recipe": {"id": "oFxtB", "label": "Homepage - Trending (most viewed)"}, "recipeId": null},
+          "templateId": "dynamicRecTray",
+          "userGroup": "Test"
+        }
+      },
+      {
+        "campaignId": "KbHsD",
+        "campaignName": "Homepage Tray 1 - Collab Filtering - Consented",
+        "campaignType": "ServerSide",
+        "campaignJavascriptContent": null,
+        "experienceId": "UmPY0",
+        "experienceName": "Homepage Tray 1 - Collab Filtering - Consented",
+        "experienceSourceCode": "",
+        "state": "Published",
+        "type": "ng",
+        "userGroup": "Default",
+        "templateNames": ["Dynamic Rec Trays"],
+        "payload": {
+          "campaign": "KbHsD",
+          "displayPriority": 2,
+          "dynamicPlacement": "hpg-tray-1",
+          "experience": "UmPY0",
+          "fullProductIds": ["AN-102303997-000-014", "AN-90746405-000-020", "AN-4112970080023-000-020", "AN-99575862-000-061", "AN-102393675-000-087", "AN-101442515-000-041", "AN-95467510-000-045", "AN-88303763-000-012", "AN-4110660650033-000-015", "AN-4115054590104-000-092"],
+          "maxRatingBound": 5,
+          "maximumNumberOfProducts": 10,
+          "placement": {"displayPriority": 2, "placement": "hpg-tray-1"},
+          "recsConfig": {"itemType": "Product", "itemTypeIsRestricted": true, "maxResults": 10, "maxResultsIsRestricted": true, "onPageAnchorId": null, "onPageAnchorType": null, "recipe": {"id": "kT3ew", "label": "Homepage - Collaborative Filtering"}, "recipeId": null},
+          "templateId": "dynamicRecTray",
+          "userGroup": "Test"
+        }
+      },
+      {
+        "campaignId": "fnWxg",
+        "campaignName": "HPG - Baby Banners (Formerly RR - V2)",
+        "campaignType": "ServerSide",
+        "campaignJavascriptContent": null,
+        "experienceId": "SanE7",
+        "experienceName": "RR Bandit",
+        "experienceSourceCode": "",
+        "state": "Published",
+        "type": "ng",
+        "userGroup": "Default",
+        "templateNames": ["[Test] Multi Dynamic Identifier - Bandit"],
+        "payload": {
+          "assetContentZoneOrTag": "homepage-right-rail",
+          "campaign": "fnWxg",
+          "contentReplacements": [
+            {"locationIdentifier": "base-module-1", "mobileContentfulId": null, "webContentfulId": null},
+            {"locationIdentifier": "base-module-2", "mobileContentfulId": null, "webContentfulId": null},
+            {"locationIdentifier": "base-module-3", "mobileContentfulId": null, "webContentfulId": null},
+            {"locationIdentifier": "base-module-4", "mobileContentfulId": null, "webContentfulId": null}
+          ],
+          "experience": "SanE7",
+          "fallbackArm": null,
+          "promotions": [],
+          "templateId": "multiDynamicIdentifierBandit",
+          "userGroup": "Test"
+        }
+      },
+      {
+        "campaignId": "JT4UR",
+        "campaignName": "Mobile HPG Test 06.02",
+        "campaignType": "ServerSide",
+        "campaignJavascriptContent": null,
+        "experienceId": "LOY8g",
+        "experienceName": "Slider Top",
+        "experienceSourceCode": "",
+        "state": "Published",
+        "type": "ng",
+        "userGroup": "Control",
+        "templateNames": ["Multi Dynamic Identifier Template"],
+        "payload": {
+          "campaign": "JT4UR",
+          "contentReplacements": [
+            {"locationIdentifier": "top-slider-swap", "mobileContentfulId": "4xcHkGWjU5uAllFB8Dtu5l", "webContentfulId": "4xcHkGWjU5uAllFB8Dtu5l"}
+          ],
+          "experience": "LOY8g",
+          "templateId": "multiDynamicIdentifier",
+          "userGroup": "Control"
+        }
+      }
+    ]
+  },
+  {
+    "requestId": "68962c812d7af3417c62bbac",
+    "userId": "a0687fe6dd5da634a58c1988",
+    "accountId": "",
+    "entityId": "5IGe4EPSi-ecl6wBmpEQ730Z5STlmbDrPp_bhLA5PvaY9zfyoc5aTi5AIOuSx4KrUS5q8bR2B4hNyGRqeAUPn5H2FbDA2WFwm6EWjmAMrIagA_Ipy8bv4491PI9LQs94",
+    "errorCode": 0,
+    "campaigns": [
+      {
+        "campaignId": "DR39e",
+        "campaignName": "AnthroLiving - Homepage Tray 1",
+        "campaignType": "ServerSide",
+        "campaignJavascriptContent": null,
+        "experienceId": "UQB9R",
+        "experienceName": "SiS Homepage - Collaborative Filtering",
+        "experienceSourceCode": "",
+        "state": "Published",
+        "type": "ng",
+        "userGroup": "Default",
+        "templateNames": ["Dynamic Rec Trays"],
+        "payload": {
+          "campaign": "DR39e",
+          "displayPriority": 2,
+          "dynamicPlacement": "sis-hpg-tray-1",
+          "experience": "UQB9R",
+          "fullProductIds": ["AN-90746405-000-020", "AN-99575862-000-061", "AN-98432495-000-061", "AN-93999175-000-040", "AN-4521J034AA-000-006", "AN-96264346-000-111", "AN-101761401-000-030", "AN-101212801-000-001", "AN-84741925-000-072", "AN-82826439-000-040"],
+          "maxRatingBound": 5,
+          "maximumNumberOfProducts": 10,
+          "placement": {"displayPriority": 2, "placement": "sis-hpg-tray-1"},
+          "recsConfig": {"itemType": "Product", "itemTypeIsRestricted": true, "maxResults": 10, "maxResultsIsRestricted": true, "onPageAnchorId": null, "onPageAnchorType": null, "recipe": {"id": "HkL51", "label": "SiS Homepage - Collaborative Filtering"}, "recipeId": null},
+          "templateId": "dynamicRecTray",
+          "userGroup": "Test"
+        }
+      },
+      {
+        "campaignId": "3itJc",
+        "campaignName": "AnthroLiving - Homepage Tray 2 - Trending (most viewed) AB - Consented",
+        "campaignType": "ServerSide",
+        "campaignJavascriptContent": null,
+        "experienceId": "EGuEG",
+        "experienceName": "SiS Homepage - Trending (most viewed)",
+        "experienceSourceCode": "",
+        "state": "Published",
+        "type": "ng",
+        "userGroup": "Default",
+        "templateNames": ["Dynamic Rec Trays"],
+        "payload": {
+          "campaign": "3itJc",
+          "displayPriority": 3,
+          "dynamicPlacement": "sis-hpg-tray-2",
+          "experience": "EGuEG",
+          "fullProductIds": ["AN-86767662-000-025", "AN-68798297-000-069", "AN-98896533-000-030", "AN-99575862-000-061", "AN-92921006-000-040", "AN-4540H738AA-000-046", "AN-4540H553AA-000-010", "AN-90746405-000-034", "AN-4540I066AA-000-040", "AN-45407437AD-000-061"],
+          "maxRatingBound": 5,
+          "maximumNumberOfProducts": 10,
+          "placement": {"displayPriority": 3, "placement": "sis-hpg-tray-2"},
+          "recsConfig": {"itemType": "Product", "itemTypeIsRestricted": true, "maxResults": 10, "maxResultsIsRestricted": true, "onPageAnchorId": null, "onPageAnchorType": null, "recipe": {"id": "qXmjd", "label": "SiS Homepage - Trending (most viewed)"}, "recipeId": null},
+          "templateId": "dynamicRecTray",
+          "userGroup": "Test"
+        }
+      },
+      {
+        "campaignId": "0fb66",
+        "campaignName": "AnthroLiving - Back in Stock Notification Tray - Similar Items - Consented",
+        "campaignType": "ServerSide",
+        "campaignJavascriptContent": null,
+        "experienceId": "0ye0a",
+        "experienceName": "BISN - Similar Items",
+        "experienceSourceCode": "",
+        "state": "Published",
+        "type": "ng",
+        "userGroup": "Default",
+        "templateNames": ["Dynamic Rec Trays"],
+        "payload": {
+          "campaign": "0fb66",
+          "displayPriority": 10,
+          "dynamicPlacement": "bis-tray",
+          "experience": "0ye0a",
+          "fullProductIds": [],
+          "maxRatingBound": 5,
+          "maximumNumberOfProducts": 10,
+          "placement": {"displayPriority": 10, "placement": "bis-tray"},
+          "recsConfig": {"itemType": "Product", "itemTypeIsRestricted": true, "maxResults": 10, "maxResultsIsRestricted": true, "onPageAnchorId": null, "onPageAnchorType": null, "recipe": {"id": "ikq9h", "label": "Back in Stock Notficiations - Similar Items Tray (AL)"}, "recipeId": null},
+          "templateId": "dynamicRecTray",
+          "userGroup": "Test"
+        }
+      }
+    ]
+  },
+  {
+    "requestId": "6896351afeb73c1d63f87653",
+    "userId": "a46895f0c197a5dc5f0c3384",
+    "accountId": "",
+    "entityId": "e3HcRo7KOiMwC7fAbX3UBfLuRHVVm76xQcFkMe44MA8MKzWobBE3KLZ1unEIBw3bql5by6nD9d2DF7z999j60dcbly2JFgiP5OypyvmbzD_hQtx1wk15PeV0T9WWzVesz_1n1wFMLvPySVovUxPW2E5ddG4doqHrpsUczDAmK6TwoWeNTHUBKV-lMIupuoZEl7zxQktzPC0frrZd8TjI2-C6FjTO9O5n4ivX9tMpfyQ8cBsXgg84RrSkMbN4klDG",
+    "errorCode": 0,
+    "campaigns": [
+      {
+        "campaignId": "JXMrD",
+        "campaignName": "Core Stores",
+        "campaignType": "ServerSide",
+        "campaignJavascriptContent": null,
+        "experienceId": "GPiA2",
+        "experienceName": "Experience 1",
+        "experienceSourceCode": "",
+        "state": "Published",
+        "type": "ng",
+        "userGroup": "Default",
+        "templateNames": ["Multi Dynamic Identifier"],
+        "payload": {
+          "campaign": "JXMrD",
+          "contentReplacements": [
+            {"locationIdentifier": "core-store-location-banner", "mobileContentfulId": "2uhRBY0dBuZV2d7h0nEo5M", "webContentfulId": "2uhRBY0dBuZV2d7h0nEo5M"},
+            {"locationIdentifier": "core-store-location-banner", "mobileContentfulId": "79zA6hn96kJhl90XbN3aGl", "webContentfulId": "79zA6hn96kJhl90XbN3aGl"}
+          ],
+          "experience": "GPiA2",
+          "templateId": "multiDynamicIdentifier",
+          "userGroup": "Test"
+        }
+      }
+    ]
+  },
+  {
+    "requestId": "68963520de5bad3ddf05f80b",
+    "userId": "a46895f0c197a5dc5f0c3384",
+    "accountId": "",
+    "entityId": "3lu1Al_hV76p7iBnt2wBqrHtMazJJwYYCWNgwLsSzAXC069azHY7QnYuCShZxJP1CXqEedup-f2duM4VWTngguOL2JQh4up5YFzsulHuSkwY-9zUMn7rVAhvFVpesGNiJMU6ZX1eOMdhylfzkz6yoEaL8BIQTYxsJ9Ya2-bt3jXGtU1RnI2jg2w0JxkEyPCs9PIeSgEl7fcHJ0pfC0mkTV0TI34xOGHfmr0tytCaWxA5IWCgp47-gG7cqQVduqWZ",
+    "errorCode": 0,
+    "campaigns": [
+      {
+        "campaignId": "JXMrD",
+        "campaignName": "Core Stores",
+        "campaignType": "ServerSide",
+        "campaignJavascriptContent": null,
+        "experienceId": "GPiA2",
+        "experienceName": "Experience 1",
+        "experienceSourceCode": "",
+        "state": "Published",
+        "type": "ng",
+        "userGroup": "Default",
+        "templateNames": ["Multi Dynamic Identifier"],
+        "payload": {
+          "campaign": "JXMrD",
+          "contentReplacements": [
+            {"locationIdentifier": "core-store-location-banner", "mobileContentfulId": "2uhRBY0dBuZV2d7h0nEo5M", "webContentfulId": "2uhRBY0dBuZV2d7h0nEo5M"},
+            {"locationIdentifier": "core-store-location-banner", "mobileContentfulId": "79zA6hn96kJhl90XbN3aGl", "webContentfulId": "79zA6hn96kJhl90XbN3aGl"}
+          ],
+          "experience": "GPiA2",
+          "templateId": "multiDynamicIdentifier",
+          "userGroup": "Test"
+        }
+      }
+    ]
+  },
+  {
+    "requestId": "6896355eb7062906a25098ca",
+    "userId": "a46895f0c197a5dc5f0c3384",
+    "accountId": "",
+    "entityId": "6VEHK7HjaqcCQXnkGVA54Wu5nXnRw-eOcyO2K_4fi1MotHmEpJhSh4TCS8cMpWG-EPBaWryiUC8QgPPUFCeOraN9LKI1ovv9-TFhyXOVnexvbnshIvTU5FpOuOE06BmmdhR4E_WIaNjf1EbQlY0edqpNWY8R3mFIey0j9BOf2NFV7V_2uc6u7p--DYz4kOI3p0gfew7MqVj6mEjSEbk_1gp1A6NYfZBn-KhKtM5j_Rg6HgHbbaQ9zqPLaAnbNyP6",
+    "errorCode": 0,
+    "campaigns": [
+      {
+        "campaignId": "INKn3",
+        "campaignName": "PDP Bottom",
+        "campaignType": "ServerSide",
+        "campaignJavascriptContent": null,
+        "experienceId": "l8hWc",
+        "experienceName": "Experience 1",
+        "experienceSourceCode": "",
+        "state": "Published",
+        "type": "ng",
+        "userGroup": "Default",
+        "templateNames": ["Static Rec Trays"],
+        "payload": {
+          "campaign": "INKn3",
+          "experience": "l8hWc",
+          "fullProductIds": ["TR-99913907-000-003", "TR-98440027-000-000", "TR-100138254-000-001", "TR-99915407-000-001", "TR-96102447-000-098", "TR-101926087-000-000", "TR-96771910-000-000", "TR-97078604-000-066", "TR-92263540-000-009", "TR-102554169-000-070", "TR-101371623-000-003", "TR-102599321-000-001"],
+          "itemType": "Product",
+          "maxRatingBound": 5,
+          "maximumNumberOfProducts": 16,
+          "placement": {"displayPriority": 4, "label": "PDP: Bottom Tray", "placement": "pdpBottom"},
+          "recsConfig": {"itemType": "Product", "itemTypeIsRestricted": true, "maxResults": 16, "maxResultsIsRestricted": true, "onPageAnchorId": null, "onPageAnchorType": null, "recipe": {"id": "S3RkF", "label": "PDP | Bottom"}, "recipeId": null},
+          "templateId": "staticRecTray",
+          "userGroup": "Test"
+        }
+      },
+      {
+        "campaignId": "1Desv",
+        "campaignName": "PDP - Right Rail",
+        "campaignType": "ServerSide",
+        "campaignJavascriptContent": null,
+        "experienceId": "L4X4J",
+        "experienceName": "Experience 1",
+        "experienceSourceCode": "",
+        "state": "Published",
+        "type": "ng",
+        "userGroup": "Default",
+        "templateNames": ["Static Rec Trays"],
+        "payload": {
+          "campaign": "1Desv",
+          "experience": "L4X4J",
+          "fullProductIds": ["TR-100441989-000-000", "TR-100442052-000-000", "TR-101892339-000-000", "TR-100441872-000-000", "TR-101904316-000-000", "TR-100442219-000-000", "TR-100323146-000-000", "TR-100442359-000-000", "TR-100442102-000-000", "TR-101904373-000-000"],
+          "itemType": "Product",
+          "maxRatingBound": 5,
+          "maximumNumberOfProducts": 10,
+          "placement": {"displayPriority": 2, "label": "PDP: Right Rail", "placement": "pdpRightRail"},
+          "recsConfig": {"itemType": "Product", "itemTypeIsRestricted": true, "maxResults": 10, "maxResultsIsRestricted": true, "onPageAnchorId": null, "onPageAnchorType": null, "recipe": {"id": "brfLO", "label": "PDP | Rail"}, "recipeId": null},
+          "templateId": "staticRecTray",
+          "userGroup": "Test"
+        }
+      },
+      {
+        "campaignId": "3HWzR",
+        "campaignName": "PDP - Top Tray",
+        "campaignType": "ServerSide",
+        "campaignJavascriptContent": null,
+        "experienceId": "Glas0",
+        "experienceName": "Experience 1",
+        "experienceSourceCode": "",
+        "state": "Published",
+        "type": "ng",
+        "userGroup": "Default",
+        "templateNames": ["Static Rec Trays"],
+        "payload": {
+          "campaign": "3HWzR",
+          "experience": "Glas0",
+          "fullProductIds": ["TR-100973494-000-000", "TR-101684546-000-061", "TR-102554169-000-070", "TR-102398781-000-000", "TR-101525921-000-000", "TR-93059657-000-059", "TR-102902772-000-000", "TR-100482363-000-060", "TR-102410800-000-030", "TR-101719706-000-070", "TR-100478320-000-060", "TR-100813179-000-000"],
+          "itemType": "Product",
+          "maxRatingBound": 5,
+          "maximumNumberOfProducts": 16,
+          "placement": {"displayPriority": 3, "label": "PDP: Top Tray", "placement": "pdpTop"},
+          "recsConfig": {"itemType": "Product", "itemTypeIsRestricted": true, "maxResults": 16, "maxResultsIsRestricted": true, "onPageAnchorId": null, "onPageAnchorType": null, "recipe": {"id": "E3WkS", "label": "PDP | Top Tray"}, "recipeId": null},
+          "templateId": "staticRecTray",
+          "userGroup": "Test"
+        }
+      },
+      {
+        "campaignId": "JXMrD",
+        "campaignName": "Core Stores",
+        "campaignType": "ServerSide",
+        "campaignJavascriptContent": null,
+        "experienceId": "GPiA2",
+        "experienceName": "Experience 1",
+        "experienceSourceCode": "",
+        "state": "Published",
+        "type": "ng",
+        "userGroup": "Default",
+        "templateNames": ["Multi Dynamic Identifier"],
+        "payload": {
+          "campaign": "JXMrD",
+          "contentReplacements": [
+            {"locationIdentifier": "core-store-location-banner", "mobileContentfulId": "2uhRBY0dBuZV2d7h0nEo5M", "webContentfulId": "2uhRBY0dBuZV2d7h0nEo5M"},
+            {"locationIdentifier": "core-store-location-banner", "mobileContentfulId": "79zA6hn96kJhl90XbN3aGl", "webContentfulId": "79zA6hn96kJhl90XbN3aGl"}
+          ],
+          "experience": "GPiA2",
+          "templateId": "multiDynamicIdentifier",
+          "userGroup": "Test"
+        }
+      }
+    ]
+  },
+  {
+    "requestId": "68963589db59d338b671cc3e",
+    "userId": "a46895f0c197a5dc5f0c3384",
+    "accountId": "",
+    "entityId": "vfkNKqhDquSs3l-lSxmK7LonsxeZoUETd0AkVMNTbHejl9N1YlV6nKmkMQoXx7uDcmK2E2zlpQoGX2WVuZy4n6MSIbSj0bOGaJ0W2o13a33i8spg6bxX5y1vafk50Fz0dGS73Agy13L6jZ1wm8s2QMwqlCKt5Difk-NtZLBIk2lz6pDYIkrP_m90orloMVfp92_qSvnPrTNpIF4ssEbfcP8325Fkk14eh-jgZLKXzI-Fsp0Jsp589eTOWN-WmsMC",
+    "errorCode": 0,
+    "campaigns": [
+      {
+        "campaignId": "HOkLM",
+        "campaignName": "Cart Recs",
+        "campaignType": "ServerSide",
+        "campaignJavascriptContent": null,
+        "experienceId": "tllPq",
+        "experienceName": "Experience 2",
+        "experienceSourceCode": "",
+        "state": "Published",
+        "type": "ng",
+        "userGroup": "Default",
+        "templateNames": ["Static Rec Trays"],
+        "payload": {
+          "campaign": "HOkLM",
+          "experience": "tllPq",
+          "fullProductIds": ["TR-100441989-000-000", "TR-100323146-000-000", "TR-100442052-000-000", "TR-102011798-000-001", "TR-101892339-000-000", "TR-69798098-000-000", "TR-99683633-000-000", "TR-97078604-000-066", "TR-100442219-000-000", "TR-98699028-000-000", "TR-85599835-000-000", "TR-58913799-000-000"],
+          "itemType": "Product",
+          "maxRatingBound": 5,
+          "maximumNumberOfProducts": 16,
+          "placement": {"displayPriority": 1, "label": "Cart", "placement": "cart"},
+          "recsConfig": {"itemType": "Product", "itemTypeIsRestricted": true, "maxResults": 16, "maxResultsIsRestricted": true, "onPageAnchorId": null, "onPageAnchorType": null, "recipe": {"id": "wjRmh", "label": "Cart Recs | CollabFiltering"}, "recipeId": null},
+          "templateId": "staticRecTray",
+          "userGroup": "Test"
+        }
+      },
+      {
+        "campaignId": "JXMrD",
+        "campaignName": "Core Stores",
+        "campaignType": "ServerSide",
+        "campaignJavascriptContent": null,
+        "experienceId": "GPiA2",
+        "experienceName": "Experience 1",
+        "experienceSourceCode": "",
+        "state": "Published",
+        "type": "ng",
+        "userGroup": "Default",
+        "templateNames": ["Multi Dynamic Identifier"],
+        "payload": {
+          "campaign": "JXMrD",
+          "contentReplacements": [
+            {"locationIdentifier": "core-store-location-banner", "mobileContentfulId": "2uhRBY0dBuZV2d7h0nEo5M", "webContentfulId": "2uhRBY0dBuZV2d7h0nEo5M"},
+            {"locationIdentifier": "core-store-location-banner", "mobileContentfulId": "79zA6hn96kJhl90XbN3aGl", "webContentfulId": "79zA6hn96kJhl90XbN3aGl"}
+          ],
+          "experience": "GPiA2",
+          "templateId": "multiDynamicIdentifier",
+          "userGroup": "Test"
+        }
+      }
+    ]
+  },
+  {
+    "requestId": "689635beb7062906a250be1b",
+    "userId": "a46895f0c197a5dc5f0c3384",
+    "accountId": "",
+    "entityId": "IfaN4wyQNxzaZboNJrJrMeTm8Klwv38k5-7Vr3j0pweXepjPdA9pM25blsjD-eO3iSGPJXGI58geBXPxKd99tfv9lmHKsLwOu37_WiRL8qX2CK8Up_X2OU1IWXXnXIrv1P_x2WjNquR4--Mj1q5e5i6uO369XSovkOsF1EwznuQGQZ-oIC7Rgl4BUcKtYyASbPbVCSS_bI9dd0Od0tykT_51RaWf5oK5RU-U53Dm9wqjZElesK1-lRLQEPVOidMF",
+    "errorCode": 0,
+    "campaigns": [
+      {
+        "campaignId": "JXMrD",
+        "campaignName": "Core Stores",
+        "campaignType": "ServerSide",
+        "campaignJavascriptContent": null,
+        "experienceId": "GPiA2",
+        "experienceName": "Experience 1",
+        "experienceSourceCode": "",
+        "state": "Published",
+        "type": "ng",
+        "userGroup": "Default",
+        "templateNames": ["Multi Dynamic Identifier"],
+        "payload": {
+          "campaign": "JXMrD",
+          "contentReplacements": [
+            {"locationIdentifier": "core-store-location-banner", "mobileContentfulId": "2uhRBY0dBuZV2d7h0nEo5M", "webContentfulId": "2uhRBY0dBuZV2d7h0nEo5M"},
+            {"locationIdentifier": "core-store-location-banner", "mobileContentfulId": "79zA6hn96kJhl90XbN3aGl", "webContentfulId": "79zA6hn96kJhl90XbN3aGl"}
+          ],
+          "experience": "GPiA2",
+          "templateId": "multiDynamicIdentifier",
+          "userGroup": "Test"
+        }
+      }
+    ]
+  }
+]

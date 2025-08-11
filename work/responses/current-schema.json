@@ -1,0 +1,107 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Current IS Response Format",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "id": { "type": "string" },
+      "errorCode": { "type": "integer" },
+      "resolvedUserId": { "type": "string" },
+      "persistedUserId": {
+        "type": "object",
+        "properties": {
+          "accountId": { "type": "string" },
+          "entityId": { "type": "string" }
+        },
+        "required": ["accountId", "entityId"]
+      },
+      "campaignResponses": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "campaignId": { "type": "string" },
+            "campaignName": { "type": "string" },
+            "campaignType": { "type": "string" },
+            "campaignJavascriptContent": { "type": ["string", "null"] },
+            "experienceId": { "type": "string" },
+            "experienceName": { "type": "string" },
+            "experienceSourceCode": { "type": "string" },
+            "state": { "type": "string" },
+            "type": { "type": "string" },
+            "userGroup": { "type": "string" },
+            "templateNames": {
+              "type": "array",
+              "items": { "type": "string" }
+            },
+            "payload": {
+              "type": "object",
+              "properties": {
+                "campaign": { "type": "string" },
+                "experience": { "type": "string" },
+                "templateId": { "type": "string" },
+                "userGroup": { "type": "string" },
+                "displayPriority": { "type": "integer" },
+                "dynamicPlacement": { "type": "string" },
+                "itemType": { "type": "string" },
+                "maxRatingBound": { "type": "integer" },
+                "maximumNumberOfProducts": { "type": "integer" },
+                "fullProductIds": {
+                  "type": "array",
+                  "items": { "type": "string" }
+                },
+                "placement": {
+                  "type": "object",
+                  "properties": {
+                    "displayPriority": { "type": "integer" },
+                    "label": { "type": "string" },
+                    "placement": { "type": "string" }
+                  }
+                },
+                "recsConfig": {
+                  "type": "object",
+                  "properties": {
+                    "itemType": { "type": "string" },
+                    "itemTypeIsRestricted": { "type": "boolean" },
+                    "maxResults": { "type": "integer" },
+                    "maxResultsIsRestricted": { "type": "boolean" },
+                    "onPageAnchorId": { "type": ["string", "null"] },
+                    "onPageAnchorType": { "type": ["string", "null"] },
+                    "recipeId": { "type": ["string", "null"] },
+                    "recipe": {
+                      "type": "object",
+                      "properties": {
+                        "id": { "type": "string" },
+                        "label": { "type": "string" }
+                      }
+                    }
+                  }
+                },
+                "assetContentZoneOrTag": { "type": "string" },
+                "contentReplacements": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "locationIdentifier": { "type": "string" },
+                      "mobileContentfulId": { "type": ["string", "null"] },
+                      "webContentfulId": { "type": ["string", "null"] }
+                    }
+                  }
+                },
+                "fallbackArm": { "type": ["string", "null"] },
+                "promotions": {
+                  "type": "array",
+                  "items": { "type": "object" }
+                }
+              }
+            }
+          },
+          "required": ["campaignId", "campaignName", "campaignType", "experienceId", "experienceName", "state", "type", "userGroup", "payload"]
+        }
+      }
+    },
+    "required": ["id", "errorCode", "resolvedUserId", "persistedUserId", "campaignResponses"]
+  }
+}

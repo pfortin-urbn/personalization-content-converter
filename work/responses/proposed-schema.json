@@ -1,0 +1,225 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Proposed CommonFormat IS Response Format",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "requestId": {
+        "type": "string",
+        "description": "Unique identifier for the request"
+      },
+      "userId": {
+        "type": "string",
+        "description": "Resolved user identifier"
+      },
+      "accountId": {
+        "type": "string",
+        "description": "Account identifier from persistedUserId"
+      },
+      "entityId": {
+        "type": "string",
+        "description": "Entity identifier from persistedUserId"
+      },
+      "errorCode": {
+        "type": "integer",
+        "description": "Error code (0 = success)"
+      },
+      "campaigns": {
+        "type": "array",
+        "description": "Array of campaign responses",
+        "items": {
+          "type": "object",
+          "properties": {
+            "campaignId": {
+              "type": "string",
+              "description": "Campaign identifier"
+            },
+            "campaignName": {
+              "type": "string",
+              "description": "Human-readable campaign name"
+            },
+            "campaignType": {
+              "type": "string",
+              "description": "Campaign type (ServerSide, etc.)"
+            },
+            "campaignJavascriptContent": {
+              "type": ["string", "null"],
+              "description": "Campaign JavaScript content"
+            },
+            "experienceId": {
+              "type": "string",
+              "description": "Experience identifier"
+            },
+            "experienceName": {
+              "type": "string",
+              "description": "Human-readable experience name"
+            },
+            "experienceSourceCode": {
+              "type": "string",
+              "description": "Experience source code"
+            },
+            "state": {
+              "type": "string",
+              "description": "Campaign state",
+              "enum": ["Published", "Draft", "Paused"]
+            },
+            "type": {
+              "type": "string",
+              "description": "Campaign type identifier"
+            },
+            "userGroup": {
+              "type": "string",
+              "description": "User group assignment (Test/Control/Default)",
+              "enum": ["Test", "Control", "Default"]
+            },
+            "templateNames": {
+              "type": "array",
+              "description": "Array of template names",
+              "items": {
+                "type": "string"
+              }
+            },
+            "payload": {
+              "type": "object",
+              "description": "Campaign payload containing replacement data",
+              "properties": {
+                "campaign": {
+                  "type": "string",
+                  "description": "Campaign identifier"
+                },
+                "experience": {
+                  "type": "string", 
+                  "description": "Experience identifier"
+                },
+                "templateId": {
+                  "type": "string",
+                  "description": "Template identifier"
+                },
+                "userGroup": {
+                  "type": "string",
+                  "description": "User group for the payload"
+                },
+                "displayPriority": {
+                  "type": "integer",
+                  "description": "Display priority"
+                },
+                "dynamicPlacement": {
+                  "type": "string",
+                  "description": "Dynamic placement identifier"
+                },
+                "itemType": {
+                  "type": "string",
+                  "description": "Item type (Product, etc.)"
+                },
+                "maxRatingBound": {
+                  "type": "integer",
+                  "description": "Maximum rating bound"
+                },
+                "maximumNumberOfProducts": {
+                  "type": "integer",
+                  "description": "Maximum number of products"
+                },
+                "fullProductIds": {
+                  "type": "array",
+                  "description": "Array of product identifiers",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "placement": {
+                  "type": "object",
+                  "description": "Placement configuration",
+                  "properties": {
+                    "displayPriority": {
+                      "type": "integer"
+                    },
+                    "label": {
+                      "type": "string"
+                    },
+                    "placement": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "recsConfig": {
+                  "type": "object",
+                  "description": "Recommendation configuration",
+                  "properties": {
+                    "itemType": {
+                      "type": "string"
+                    },
+                    "itemTypeIsRestricted": {
+                      "type": "boolean"
+                    },
+                    "maxResults": {
+                      "type": "integer"
+                    },
+                    "maxResultsIsRestricted": {
+                      "type": "boolean"
+                    },
+                    "onPageAnchorId": {
+                      "type": ["string", "null"]
+                    },
+                    "onPageAnchorType": {
+                      "type": ["string", "null"]
+                    },
+                    "recipeId": {
+                      "type": ["string", "null"]
+                    },
+                    "recipe": {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "label": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                },
+                "assetContentZoneOrTag": {
+                  "type": "string",
+                  "description": "Asset content zone or tag"
+                },
+                "contentReplacements": {
+                  "type": "array",
+                  "description": "Content replacement configurations",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "locationIdentifier": {
+                        "type": "string"
+                      },
+                      "mobileContentfulId": {
+                        "type": ["string", "null"]
+                      },
+                      "webContentfulId": {
+                        "type": ["string", "null"]
+                      }
+                    },
+                    "required": ["locationIdentifier"]
+                  }
+                },
+                "fallbackArm": {
+                  "type": ["string", "null"]
+                },
+                "promotions": {
+                  "type": "array",
+                  "items": {
+                    "type": "object"
+                  }
+                }
+              },
+              "required": ["campaign", "experience", "templateId"]
+            }
+          },
+          "required": ["campaignId", "campaignName", "campaignType", "campaignJavascriptContent", "experienceId", "experienceName", "experienceSourceCode", "state", "type", "userGroup", "templateNames", "payload"]
+        }
+      }
+    },
+    "required": ["requestId", "userId", "accountId", "entityId", "errorCode", "campaigns"]
+  }
+}

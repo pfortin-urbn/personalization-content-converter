@@ -26,70 +26,150 @@
 			"response": []
 		},
 		{
-			"name": "UO to Common Translation",
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "Content-Type",
-						"value": "application/json"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n  \"personalized\": true,\n  \"contentfulEnvironment\": \"master\",\n  \"bestMatch\": {\n    \"tokenScope\": \"AUTHORIZED\",\n    \"country\": \"US\",\n    \"region\": \"PA\",\n    \"city\": \"PHILADELPHIA\",\n    \"url\": \"/products/uo-cropped-cardigan-womens\",\n    \"homepage\": false,\n    \"sort\": false,\n    \"userType\": \"member\",\n    \"loyaltyTier\": \"Gold\",\n    \"promoCode\": \"WINTER25\",\n    \"experimentGroup\": \"test-group-a\"\n  },\n  \"queries\": {\n    \"productRecommendations\": {\n      \"include\": 5,\n      \"content_type\": \"productRecommendation\",\n      \"fields.category\": \"womens-sweaters\",\n      \"fields.active\": true,\n      \"select\": \"fields.title,fields.products,fields.dyIdentifier,sys\"\n    },\n    \"globalPromo\": {\n      \"include\": 3,\n      \"content_type\": \"globalPromoContainer\"\n    }\n  },\n  \"isEvent\": {\n    \"source\": {\n      \"locale\": \"en_US\",\n      \"application\": \"web\",\n      \"url\": \"https://urbanoutfitters.com/products/uo-cropped-cardigan-womens\",\n      \"channel\": \"Server\",\n      \"pageType\": \"product\",\n      \"referrer\": \"https://urbanoutfitters.com/womens/sweaters\"\n    },\n    \"user\": {\n      \"id\": \"4a095131-2682-4503-b1bf-d3bd8bfec1f7\",\n      \"attributes\": {\n        \"customerId\": \"cust_12345\",\n        \"customer_auth_status\": \"AUTHORIZED\",\n        \"customer_is_employee\": false,\n        \"locale\": \"en_US\",\n        \"urbn_is_loyalty\": true,\n        \"countryCode\": \"US\",\n        \"regionCode\": \"PA\",\n        \"email\": \"sarah.chen@gmail.com\",\n        \"segments\": [\"returning-customers\", \"womens-clothing-buyers\"]\n      }\n    },\n    \"flags\": {\n      \"pageView\": true\n    },\n    \"action\": \"Product Detail\",\n    \"itemAction\": \"View Product\",\n    \"catalog\": {\n      \"Product\": {\n        \"_id\": \"uo-cardigan-w-2025-001\",\n        \"name\": \"UO Cropped Cardigan\",\n        \"category\": \"Womens-Sweaters\",\n        \"brand\": \"Urban Outfitters\",\n        \"price\": 69.99,\n        \"currency\": \"USD\",\n        \"attributes\": {\n          \"color\": \"Sage Green\",\n          \"size\": \"Medium\",\n          \"material\": \"Cotton Blend\"\n        }\n      }\n    },\n    \"timestamp\": \"2025-01-15T10:30:45Z\"\n  }\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
+			"name": "Requests",
+			"item": [
+				{
+					"name": "UO to Common Request Translation",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"personalized\": true,\n  \"contentfulEnvironment\": \"master\",\n  \"bestMatch\": {\n    \"tokenScope\": \"AUTHORIZED\",\n    \"country\": \"US\",\n    \"region\": \"PA\",\n    \"city\": \"PHILADELPHIA\",\n    \"url\": \"/products/uo-cropped-cardigan-womens\",\n    \"homepage\": false,\n    \"sort\": false,\n    \"userType\": \"member\",\n    \"loyaltyTier\": \"Gold\",\n    \"promoCode\": \"WINTER25\",\n    \"experimentGroup\": \"test-group-a\"\n  },\n  \"queries\": {\n    \"productRecommendations\": {\n      \"include\": 5,\n      \"content_type\": \"productRecommendation\",\n      \"fields.category\": \"womens-sweaters\",\n      \"fields.active\": true,\n      \"select\": \"fields.title,fields.products,fields.dyIdentifier,sys\"\n    },\n    \"globalPromo\": {\n      \"include\": 3,\n      \"content_type\": \"globalPromoContainer\"\n    }\n  },\n  \"isEvent\": {\n    \"source\": {\n      \"locale\": \"en_US\",\n      \"application\": \"web\",\n      \"url\": \"https://urbanoutfitters.com/products/uo-cropped-cardigan-womens\",\n      \"channel\": \"Server\",\n      \"pageType\": \"product\",\n      \"referrer\": \"https://urbanoutfitters.com/womens/sweaters\"\n    },\n    \"user\": {\n      \"id\": \"4a095131-2682-4503-b1bf-d3bd8bfec1f7\",\n      \"attributes\": {\n        \"customerId\": \"cust_12345\",\n        \"customer_auth_status\": \"AUTHORIZED\",\n        \"customer_is_employee\": false,\n        \"locale\": \"en_US\",\n        \"urbn_is_loyalty\": true,\n        \"countryCode\": \"US\",\n        \"regionCode\": \"PA\",\n        \"email\": \"sarah.chen@gmail.com\",\n        \"segments\": [\"returning-customers\", \"womens-clothing-buyers\"]\n      }\n    },\n    \"flags\": {\n      \"pageView\": true\n    },\n    \"action\": \"Product Detail\",\n    \"itemAction\": \"View Product\",\n    \"catalog\": {\n      \"Product\": {\n        \"_id\": \"uo-cardigan-w-2025-001\",\n        \"name\": \"UO Cropped Cardigan\",\n        \"category\": \"Womens-Sweaters\",\n        \"brand\": \"Urban Outfitters\",\n        \"price\": 69.99,\n        \"currency\": \"USD\",\n        \"attributes\": {\n          \"color\": \"Sage Green\",\n          \"size\": \"Medium\",\n          \"material\": \"Cotton Blend\"\n        }\n      }\n    },\n    \"timestamp\": \"2025-01-15T10:30:45Z\"\n  }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/translate/request/uo-to-common",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"translate",
+								"request",
+								"uo-to-common"
+							]
+						},
+						"description": "Translate UO Current Request Format to Common Request Format"
+					},
+					"response": []
 				},
-				"url": {
-					"raw": "{{base_url}}/translate/uo-to-common",
-					"host": [
-						"{{base_url}}"
-					],
-					"path": [
-						"translate",
-						"uo-to-common"
-					]
-				},
-				"description": "Translate UO Current Request Format to Common Request Format"
-			},
-			"response": []
+				{
+					"name": "Common to UO Request Translation",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"personalized\": true,\n  \"contentfulEnvironment\": \"master\",\n  \"bestMatch\": {\n    \"tokenScope\": \"AUTHORIZED\",\n    \"country\": \"US\",\n    \"userType\": \"member\"\n  },\n  \"queries\": {\n    \"productRecommendations\": {\n      \"include\": 5,\n      \"content_type\": \"productRecommendation\"\n    }\n  },\n  \"user\": {\n    \"id\": \"user-123\",\n    \"email\": \"test@example.com\",\n    \"type\": \"member\",\n    \"segments\": [\"premium-users\"]\n  },\n  \"session\": {\n    \"id\": \"sess-456\",\n    \"isNew\": true,\n    \"startTime\": \"2025-01-15T10:00:00Z\"\n  },\n  \"event\": {\n    \"type\": \"page_view\",\n    \"action\": \"Page View\",\n    \"source\": \"web\"\n  },\n  \"page\": {\n    \"type\": \"homepage\",\n    \"url\": \"https://urbanoutfitters.com\",\n    \"referrer\": \"\",\n    \"title\": \"Urban Outfitters - Home\",\n    \"language\": \"en\"\n  },\n  \"products\": [\n    {\n      \"id\": \"prod-789\",\n      \"name\": \"Test Product\",\n      \"category\": \"Clothing\",\n      \"brand\": \"UO\",\n      \"price\": 49.99,\n      \"currency\": \"USD\",\n      \"quantity\": 1\n    }\n  ],\n  \"device\": {\n    \"type\": \"desktop\",\n    \"userAgent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36\",\n    \"ip\": \"192.168.1.1\",\n    \"platform\": \"web\"\n  },\n  \"timestamp\": \"2025-01-15T10:30:45Z\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/translate/request/common-to-uo",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"translate",
+								"request",
+								"common-to-uo"
+							]
+						},
+						"description": "Translate Common Request Format to UO Current Request Format"
+					},
+					"response": []
+				}
+			]
 		},
 		{
-			"name": "Common to UO Translation",
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "Content-Type",
-						"value": "application/json"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n  \"personalized\": true,\n  \"contentfulEnvironment\": \"master\",\n  \"bestMatch\": {\n    \"tokenScope\": \"AUTHORIZED\",\n    \"country\": \"US\",\n    \"userType\": \"member\"\n  },\n  \"queries\": {\n    \"productRecommendations\": {\n      \"include\": 5,\n      \"content_type\": \"productRecommendation\"\n    }\n  },\n  \"user\": {\n    \"id\": \"user-123\",\n    \"email\": \"test@example.com\",\n    \"type\": \"member\",\n    \"segments\": [\"premium-users\"]\n  },\n  \"session\": {\n    \"id\": \"sess-456\",\n    \"isNew\": true,\n    \"startTime\": \"2025-01-15T10:00:00Z\"\n  },\n  \"event\": {\n    \"type\": \"page_view\",\n    \"action\": \"Page View\",\n    \"source\": \"web\"\n  },\n  \"page\": {\n    \"type\": \"homepage\",\n    \"url\": \"https://urbanoutfitters.com\",\n    \"referrer\": \"\",\n    \"title\": \"Urban Outfitters - Home\",\n    \"language\": \"en\"\n  },\n  \"products\": [\n    {\n      \"id\": \"prod-789\",\n      \"name\": \"Test Product\",\n      \"category\": \"Clothing\",\n      \"brand\": \"UO\",\n      \"price\": 49.99,\n      \"currency\": \"USD\",\n      \"quantity\": 1\n    }\n  ],\n  \"device\": {\n    \"type\": \"desktop\",\n    \"userAgent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36\",\n    \"ip\": \"192.168.1.1\",\n    \"platform\": \"web\"\n  },\n  \"timestamp\": \"2025-01-15T10:30:45Z\"\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
+			"name": "Responses",
+			"item": [
+				{
+					"name": "Common to IS Response Translation",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"requestId\": \"68962ba7cc14ec02f94b9611\",\n  \"userId\": \"a0687fe6dd5da634a58c1988\",\n  \"accountId\": \"\",\n  \"entityId\": \"K4rsytVtReJ656phKFSWWFxedGzz40JnjTCMMTuwljcRX_mf3qt0gGHRKSr90BV2ZGB6oKHZVrTDPuRUgokegEh_1k4vPZoSz5-i0EbLpwdzXwBxfEQDnKRh4BQo5_D4\",\n  \"errorCode\": 0,\n  \"campaigns\": [\n    {\n      \"campaignId\": \"2fwcc\",\n      \"campaignName\": \"Cart Confirm - Consented - Current\",\n      \"campaignType\": \"ServerSide\",\n      \"campaignJavascriptContent\": null,\n      \"experienceId\": \"8GsXR\",\n      \"experienceName\": \"Co-Buy + Similar Items\",\n      \"experienceSourceCode\": \"\",\n      \"state\": \"Published\",\n      \"type\": \"ng\",\n      \"userGroup\": \"Default\",\n      \"templateNames\": [\"Static Rec Trays\"],\n      \"payload\": {\n        \"campaign\": \"2fwcc\",\n        \"experience\": \"8GsXR\",\n        \"fullProductIds\": [\"AN-45407437AD-000-015\", \"AN-100934744-000-015\"],\n        \"itemType\": \"Product\",\n        \"maxRatingBound\": 5,\n        \"maximumNumberOfProducts\": 16,\n        \"placement\": {\n          \"displayPriority\": 1,\n          \"label\": \"Cart Confirm\",\n          \"placement\": \"cartConfirm\"\n        },\n        \"templateId\": \"staticRecTray\",\n        \"userGroup\": \"Test\"\n      }\n    }\n  ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/translate/response/common-to-is",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"translate",
+								"response",
+								"common-to-is"
+							]
+						},
+						"description": "Translate Common Response Format to IS Response Format"
+					},
+					"response": []
 				},
-				"url": {
-					"raw": "{{base_url}}/translate/common-to-uo",
-					"host": [
-						"{{base_url}}"
-					],
-					"path": [
-						"translate",
-						"common-to-uo"
-					]
-				},
-				"description": "Translate Common Request Format to UO Current Request Format"
-			},
-			"response": []
+				{
+					"name": "IS to Common Response Translation",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"id\": \"68962ba7cc14ec02f94b9611\",\n  \"resolvedUserId\": \"a0687fe6dd5da634a58c1988\",\n  \"persistedUserId\": {\n    \"accountId\": \"\",\n    \"entityId\": \"K4rsytVtReJ656phKFSWWFxedGzz40JnjTCMMTuwljcRX_mf3qt0gGHRKSr90BV2ZGB6oKHZVrTDPuRUgokegEh_1k4vPZoSz5-i0EbLpwdzXwBxfEQDnKRh4BQo5_D4\"\n  },\n  \"errorCode\": 0,\n  \"campaignResponses\": [\n    {\n      \"campaignId\": \"2fwcc\",\n      \"campaignName\": \"Cart Confirm - Consented - Current\",\n      \"campaignType\": \"ServerSide\",\n      \"campaignJavascriptContent\": null,\n      \"experienceId\": \"8GsXR\",\n      \"experienceName\": \"Co-Buy + Similar Items\",\n      \"experienceSourceCode\": \"\",\n      \"state\": \"Published\",\n      \"type\": \"ng\",\n      \"userGroup\": \"Default\",\n      \"templateNames\": [\"Static Rec Trays\"],\n      \"payload\": {\n        \"campaign\": \"2fwcc\",\n        \"experience\": \"8GsXR\",\n        \"fullProductIds\": [\"AN-45407437AD-000-015\", \"AN-100934744-000-015\"],\n        \"itemType\": \"Product\",\n        \"maxRatingBound\": 5,\n        \"maximumNumberOfProducts\": 16,\n        \"placement\": {\n          \"displayPriority\": 1,\n          \"label\": \"Cart Confirm\",\n          \"placement\": \"cartConfirm\"\n        },\n        \"templateId\": \"staticRecTray\",\n        \"userGroup\": \"Test\"\n      }\n    }\n  ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/translate/response/is-to-common",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"translate",
+								"response",
+								"is-to-common"
+							]
+						},
+						"description": "Translate IS Response Format to Common Response Format"
+					},
+					"response": []
+				}
+			]
 		}
 	],
 	"event": [
