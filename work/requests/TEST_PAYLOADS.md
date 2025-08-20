@@ -26,7 +26,7 @@ This document contains all 54 payloads used during comprehensive testing of the 
 
 ### ANT-5: Search Results
 ```json
-{"contentfulEnvironment":"master","bestMatch":{"cookie":"SS_SHOP_THE_LOOK_VARIANT=2","tokenScope":"GUEST","country":"US","region":"PA","zipCodes":"19125","city":"Philadelphia","url":"/search?q=mug","homepage":false,"sort":true},"queries":{"globalPromo":{"include":3,"content_type":"globalPromoContainer"},"infoNotification":{"include":3,"content_type":"infoNotification"},"shoppingPageContent":{"include":4,"content_type":"shoppingPage","fields.slugs[in]":"search?q=mug"}},"isEvent":{"source":{"locale":"en_US","application":"web|other|desktop","url":"https://www.anthropologie.com/search?q=mug","channel":"Server","pageType":"search"},"user":{"id":"c8b9771-75cb-4900-9411-cf45c1b92c5e","attributes":{"customer_auth_status":"GUEST","customer_delivery_pass_mbr":false,"customer_is_employee":false,"customer_non_consent":false,"locale":"en_US","urbn_is_loyalty":false,"tier_status":"","countryCode":"US","regionCode":"PA"}},"flags":{"pageView":false},"action":"SearchResultsView","itemAction":"Search View Results","catalog":{}}}
+{"contentfulEnvironment":"master","bestMatch":{"cookie":"SS_SHOP_THE_LOOK_VARIANT=2","tokenScope":"GUEST","country":"US","region":"PA","zipCodes":"19125","city":"Philadelphia","url":"/search?q=mug","homepage":false,"sort":true},"queries":{"globalPromo":{"include":3,"content_type":"globalPromoContainer"},"infoNotification":{"include":3,"content_type":"infoNotification"},"shoppingPageContent":{"include":4,"content_type":"shoppingPage","fields.slugs[in]":"search?q=mug"}},"isEvent":{"source":{"locale":"en_US","application":"web|other|desktop","url":"https://www.anthropologie.com/search?q=mug","channel":"Server","pageType":"search"},"user":{"id":"c8b9771-75cb-4900-9411-cf45c1b92c5e","attributes":{"customer_auth_status":"GUEST","customer_delivery_pass_mbr":false,"customer_is_employee":false,"customer_non_consent":false,"locale":"en_US","urbn_is_loyalty":false,"tier_status":"","countryCode":"US","regionCode":"PA"}},"flags":{"pageView":false},"action":"SearchResultsView","itemAction":"Search View Results","catalog":{}}}}
 ```
 
 ### ANT-6: Product with Cart
@@ -68,12 +68,12 @@ This document contains all 54 payloads used during comprehensive testing of the 
 
 ### UO-6: Search Page
 ```json
-{"contentfulEnvironment":"master","bestMatch":{"cookie":"SS_SHOP_THE_LOOK_VARIANT=2","tokenScope":"GUEST","country":"US","region":"PA","zipCodes":"19125","city":"Philadelphia","url":"/search","homepage":false,"sort":true},"queries":{"globalPromo":{"include":3,"content_type":"globalPromoContainer"},"infoNotification":{"include":3,"content_type":"infoNotification"},"shoppingPageContent":{"include":4,"content_type":"shoppingPage","fields.slugs[in]":"search"}},"isEvent":{"source":{"locale":"en_US","application":"web|other|desktop","url":"https://www.urbanoutfitters.com/search","channel":"Server","pageType":"search"},"user":{"id":"c9b79771-75cb-4900-9411-cf45c1b92c5e","attributes":{"customer_auth_status":"GUEST","customer_delivery_pass_mbr":false,"customer_is_employee":false,"customer_non_consent":false,"locale":"en_US","urbn_is_loyalty":false,"tier_status":"","countryCode":"US","regionCode":"PA"}},"flags":{"pageView":false},"action":"SearchResultsView","itemAction":"Search View Results","catalog":{}}}
+{"contentfulEnvironment":"master","bestMatch":{"cookie":"SS_SHOP_THE_LOOK_VARIANT=2","tokenScope":"GUEST","country":"US","region":"PA","zipCodes":"19125","city":"Philadelphia","url":"/search","homepage":false,"sort":true},"queries":{"globalPromo":{"include":3,"content_type":"globalPromoContainer"},"infoNotification":{"include":3,"content_type":"infoNotification"},"shoppingPageContent":{"include":4,"content_type":"shoppingPage","fields.slugs[in]":"search"}},"isEvent":{"source":{"locale":"en_US","application":"web|other|desktop","url":"https://www.urbanoutfitters.com/search","channel":"Server","pageType":"search"},"user":{"id":"c9b79771-75cb-4900-9411-cf45c1b92c5e","attributes":{"customer_auth_status":"GUEST","customer_delivery_pass_mbr":false,"customer_is_employee":false,"customer_non_consent":false,"locale":"en_US","urbn_is_loyalty":false,"tier_status":"","countryCode":"US","regionCode":"PA"}},"flags":{"pageView":false},"action":"SearchResultsView","itemAction":"Search View Results","catalog":{}}}}
 ```
 
 ### UO-7: Search Results (Citrus)
 ```json
-{"contentfulEnvironment":"master","bestMatch":{"cookie":"SS_SHOP_THE_LOOK_VARIANT=2","tokenScope":"GUEST","country":"US","region":"PA","zipCodes":"19125","city":"Philadelphia","url":"/search?q=Citrus","homepage":false,"sort":true},"queries":{"globalPromo":{"include":3,"content_type":"globalPromoContainer"},"infoNotification":{"include":3,"content_type":"infoNotification"},"shoppingPageContent":{"include":4,"content_type":"shoppingPage","fields.slugs[in]":"search?q=Citrus"}},"isEvent":{"source":{"locale":"en_US","application":"web|other|desktop","url":"https://www.urbanoutfitters.com/search?q=Citrus","channel":"Server","pageType":"search"},"user":{"id":"c9b79771-75cb-4900-9411-cf45c1b92c5e","attributes":{"customer_auth_status":"GUEST","customer_delivery_pass_mbr":false,"customer_is_employee":false,"customer_non_consent":false,"locale":"en_US","urbn_is_loyalty":false,"tier_status":"","countryCode":"US","regionCode":"PA"}},"flags":{"pageView":false},"action":"SearchResultsView","itemAction":"Search View Results","catalog":{}}}
+{"contentfulEnvironment":"master","bestMatch":{"cookie":"SS_SHOP_THE_LOOK_VARIANT=2","tokenScope":"GUEST","country":"US","region":"PA","zipCodes":"19125","city":"Philadelphia","url":"/search?q=Citrus","homepage":false,"sort":true},"queries":{"globalPromo":{"include":3,"content_type":"globalPromoContainer"},"infoNotification":{"include":3,"content_type":"infoNotification"},"shoppingPageContent":{"include":4,"content_type":"shoppingPage","fields.slugs[in]":"search?q=Citrus"}},"isEvent":{"source":{"locale":"en_US","application":"web|other|desktop","url":"https://www.urbanoutfitters.com/search?q=Citrus","channel":"Server","pageType":"search"},"user":{"id":"c9b79771-75cb-4900-9411-cf45c1b92c5e","attributes":{"customer_auth_status":"GUEST","customer_delivery_pass_mbr":false,"customer_is_employee":false,"customer_non_consent":false,"locale":"en_US","urbn_is_loyalty":false,"tier_status":"","countryCode":"US","regionCode":"PA"}},"flags":{"pageView":false},"action":"SearchResultsView","itemAction":"Search View Results","catalog":{}}}}
 ```
 
 ## Free People Payloads (6 total)
@@ -144,22 +144,22 @@ This document contains all 54 payloads used during comprehensive testing of the 
 
 ### TRA-2: Throws & Pillows Category (Authorized)
 ```json
-{"contentfulEnvironment":"master","bestMatch":{"cookie":"","tokenScope":"AUTHORIZED","country":"US","region":"PA","zipCodes":"19125","city":"Philadelphia","url":"/throws-pillows","homepage":false,"sort":true},"queries":{"shoppingPageContent":{"include":4,"content_type":"shoppingPage","fields.slugs[in]":"throws-pillows"},"globalPromo":{"include":3,"content_type":"globalPromoContainer"},"infoNotification":{"include":3,"content_type":"infoNotification"}},"isEvent":{"source":{"locale":"en_US","application":"web|other|desktop","url":"https://www.shopterrain.com/throws-pillows","channel":"Server","pageType":"category"},"user":{"id":"5cb07862-77b3-43ad-9c17-6837f8b83f2d","attributes":{"customerId":"08834648-4168-4ca8-9cf6-ae7e59b7848c","customer_auth_status":"AUTHORIZED","customer_delivery_pass_mbr":false,"customer_is_employee":true,"customer_non_consent":false,"locale":"en_US","urbn_is_loyalty":false,"tier_status":"","sfcrmContactId":"0033g00001fDleMAAS","countryCode":"US","regionCode":"PA"}},"flags":{"pageView":true},"action":"CategoryView","itemAction":"View Category","catalog":{"Category":{"_id":"throws-pillows"}}}}
+{"contentfulEnvironment":"master","bestMatch":{"cookie":"","tokenScope":"AUTHORIZED","country":"US","region":"PA","zipCodes":"19125","city":"Philadelphia","url":"/throws-pillows","homepage":false,"sort":true},"queries":{"shoppingPageContent":{"include":4,"content_type":"shoppingPage","fields.slugs[in]":"throws-pillows"},"globalPromo":{"include":3,"content_type":"globalPromoContainer"},"infoNotification":{"include":3,"content_type":"infoNotification"}},"isEvent":{"source":{"locale":"en_US","application":"web|other|desktop","url":"https://www.shopterrain.com/throws-pillows","channel":"Server","pageType":"category"},"user":{"id":"5cb07862-77b3-43ad-9c17-6837f8b83f2d","attributes":{"customerId":"08834648-4168-4ca8-9cf6-ae7e59b7848c","customer_auth_status":"AUTHORIZED","customer_delivery_pass_mbr":false,"customer_is_employee":false,"customer_non_consent":false,"locale":"en_US","urbn_is_loyalty":false,"tier_status":"","sfcrmContactId":"0033g00001fDleMAAS","countryCode":"US","regionCode":"PA"}},"flags":{"pageView":true},"action":"CategoryView","itemAction":"View Category","catalog":{"Category":{"_id":"throws-pillows"}}}}
 ```
 
 ### TRA-3: Product Detail Page (Authorized)
 ```json
-{"contentfulEnvironment":"master","bestMatch":{"cookie":"","tokenScope":"AUTHORIZED","country":"US","region":"PA","zipCodes":"19125","city":"Philadelphia","url":"/shop/floral-block-print-outdoor-pillow?category=throws-pillows&color=040","homepage":false,"sort":true},"queries":{"globalPromo":{"include":3,"content_type":"globalPromoContainer"},"infoNotification":{"include":3,"content_type":"infoNotification"}},"isEvent":{"source":{"locale":"en_US","application":"web|other|desktop","url":"https://www.shopterrain.com/shop/floral-block-print-outdoor-pillow?category=throws-pillows&color=040&merchClass=3514","channel":"Server","pageType":"product"},"user":{"id":"5cb07862-77b3-43ad-9c17-6837f8b83f2d","attributes":{"customerId":"08834648-4168-4ca8-9cf6-ae7e59b7848c","customer_auth_status":"AUTHORIZED","customer_delivery_pass_mbr":false,"customer_is_employee":true,"customer_non_consent":false,"locale":"en_US","urbn_is_loyalty":false,"tier_status":"","sfcrmContactId":"0033g00001fDleMAAS","countryCode":"US","regionCode":"PA"}},"flags":{"pageView":true},"action":"PDPView","itemAction":"View Item","catalog":{"Product":{"_id":"TR-99057424-000-040"}}}}
+{"contentfulEnvironment":"master","bestMatch":{"cookie":"","tokenScope":"AUTHORIZED","country":"US","region":"PA","zipCodes":"19125","city":"Philadelphia","url":"/shop/floral-block-print-outdoor-pillow?category=throws-pillows&color=040","homepage":false,"sort":true},"queries":{"globalPromo":{"include":3,"content_type":"globalPromoContainer"},"infoNotification":{"include":3,"content_type":"infoNotification"}},"isEvent":{"source":{"locale":"en_US","application":"web|other|desktop","url":"https://www.shopterrain.com/shop/floral-block-print-outdoor-pillow?category=throws-pillows&color=040&merchClass=3514","channel":"Server","pageType":"product"},"user":{"id":"5cb07862-77b3-43ad-9c17-6837f8b83f2d","attributes":{"customerId":"08834648-4168-4ca8-9cf6-ae7e59b7848c","customer_auth_status":"AUTHORIZED","customer_delivery_pass_mbr":false,"customer_is_employee":false,"customer_non_consent":false,"locale":"en_US","urbn_is_loyalty":false,"tier_status":"","sfcrmContactId":"0033g00001fDleMAAS","countryCode":"US","regionCode":"PA"}},"flags":{"pageView":true},"action":"PDPView","itemAction":"View Item","catalog":{"Product":{"_id":"TR-99057424-000-040"}}}}
 ```
 
 ### TRA-4: Multi-Item Cart (Authorized)
 ```json
-{"contentfulEnvironment":"master","bestMatch":{"cookie":"","tokenScope":"AUTHORIZED","country":"US","region":"PA","zipCodes":"19125","city":"Philadelphia","url":"/cart","homepage":false,"sort":true},"queries":{"globalPromo":{"include":3,"content_type":"globalPromoContainer"},"infoNotification":{"include":3,"content_type":"infoNotification"}},"isEvent":{"source":{"locale":"en_US","application":"web|other|desktop","url":"https://www.shopterrain.com/cart","channel":"Server","pageType":"Cart"},"user":{"id":"5cb07862-77b3-43ad-9c17-6837f8b83f2d","attributes":{"customerId":"08834648-4168-4ca8-9cf6-ae7e59b7848c","customer_auth_status":"AUTHORIZED","customer_delivery_pass_mbr":false,"customer_is_employee":true,"customer_non_consent":false,"locale":"en_US","urbn_is_loyalty":false,"tier_status":"","sfcrmContactId":"0033g00001fDleMAAS","countryCode":"US","regionCode":"PA"}},"flags":{"pageView":true},"action":"CartView","itemAction":"View Cart","cart":{"complete":{"Product":[{"_id":"TR-99057424-000-040","price":96,"quantity":1},{"_id":"TR-92961846-000-000","price":636,"quantity":1}]}}}}
+{"contentfulEnvironment":"master","bestMatch":{"cookie":"","tokenScope":"AUTHORIZED","country":"US","region":"PA","zipCodes":"19125","city":"Philadelphia","url":"/cart","homepage":false,"sort":true},"queries":{"globalPromo":{"include":3,"content_type":"globalPromoContainer"},"infoNotification":{"include":3,"content_type":"infoNotification"}},"isEvent":{"source":{"locale":"en_US","application":"web|other|desktop","url":"https://www.shopterrain.com/cart","channel":"Server","pageType":"Cart"},"user":{"id":"5cb07862-77b3-43ad-9c17-6837f8b83f2d","attributes":{"customerId":"08834648-4168-4ca8-9cf6-ae7e59b7848c","customer_auth_status":"AUTHORIZED","customer_delivery_pass_mbr":false,"customer_is_employee":false,"customer_non_consent":false,"locale":"en_US","urbn_is_loyalty":false,"tier_status":"","sfcrmContactId":"0033g00001fDleMAAS","countryCode":"US","regionCode":"PA"}},"flags":{"pageView":true},"action":"CartView","itemAction":"View Cart","cart":{"complete":{"Product":[{"_id":"TR-99057424-000-040","price":96,"quantity":1},{"_id":"TR-92961846-000-000","price":636,"quantity":1}]}}}}
 ```
 
 ### TRA-5: Store Locations Page (Authorized)
 ```json
-{"contentfulEnvironment":"master","bestMatch":{"cookie":"","tokenScope":"AUTHORIZED","country":"US","region":"PA","zipCodes":"19125","city":"Philadelphia","url":"/store-locations","homepage":false,"sort":false},"queries":{"landingPageContent":{"include":6,"content_type":"landingPage","fields.slug":"store-locations","select":"fields.slug,fields.pwaModules,fields.backgroundColor,fields.startDate,fields.endDate,fields.targets,fields.excludes,fields.jsonLd,sys"},"globalPromo":{"include":3,"content_type":"globalPromoContainer"},"infoNotification":{"include":3,"content_type":"infoNotification"}},"isEvent":{"source":{"locale":"en_US","application":"web|other|desktop","url":"https://www.shopterrain.com/store-locations","channel":"Server","pageType":"content"},"user":{"id":"5cb07862-77b3-43ad-9c17-6837f8b83f2d","attributes":{"customerId":"08834648-4168-4ca8-9cf6-ae7e59b7848c","customer_auth_status":"AUTHORIZED","customer_delivery_pass_mbr":false,"customer_is_employee":true,"customer_non_consent":false,"locale":"en_US","urbn_is_loyalty":false,"tier_status":"","sfcrmContactId":"0033g00001fDleMAAS","countryCode":"US","regionCode":"PA"}},"flags":{"pageView":true},"action":"ContentView","itemAction":"View Category","catalog":{"Category":{"_id":"store-locations"}}}}
+{"contentfulEnvironment":"master","bestMatch":{"cookie":"","tokenScope":"AUTHORIZED","country":"US","region":"PA","zipCodes":"19125","city":"Philadelphia","url":"/store-locations","homepage":false,"sort":false},"queries":{"landingPageContent":{"include":6,"content_type":"landingPage","fields.slug":"store-locations","select":"fields.slug,fields.pwaModules,fields.backgroundColor,fields.startDate,fields.endDate,fields.targets,fields.excludes,fields.jsonLd,sys"},"globalPromo":{"include":3,"content_type":"globalPromoContainer"},"infoNotification":{"include":3,"content_type":"infoNotification"}},"isEvent":{"source":{"locale":"en_US","application":"web|other|desktop","url":"https://www.shopterrain.com/store-locations","channel":"Server","pageType":"content"},"user":{"id":"5cb07862-77b3-43ad-9c17-6837f8b83f2d","attributes":{"customerId":"08834648-4168-4ca8-9cf6-ae7e59b7848c","customer_auth_status":"AUTHORIZED","customer_delivery_pass_mbr":false,"customer_is_employee":false,"customer_non_consent":false,"locale":"en_US","urbn_is_loyalty":false,"tier_status":"","sfcrmContactId":"0033g00001fDleMAAS","countryCode":"US","regionCode":"PA"}},"flags":{"pageView":true},"action":"ContentView","itemAction":"View Category","catalog":{"Category":{"_id":"store-locations"}}}}
 ```
 
 ## Extended Anthropologie Testing (24 additional payloads)
@@ -205,3 +205,163 @@ This document contains all 54 payloads used during comprehensive testing of the 
 - **Complex Features**: URL filtering, Quick View interactions, Multi-item carts, Account management, MTO products, Bundle products, Help systems
 
 All payloads successfully passed bidirectional round-trip translation with 100% data fidelity preservation.
+
+## Dynamic Yield Payloads (4 total)
+
+### DY-1: Homepage Request
+```json
+{
+  "user": {
+    "active_consent_accepted": true,
+    "dyid_server": "",
+    "dyid": ""
+  },
+  "session": {
+    "dy": ""
+  },
+  "context": {
+    "page": {
+      "type": "HOMEPAGE",
+      "data": [],
+      "location": "https://www.urbn.com/"
+    },
+    "device": {
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36",
+      "type": "DESKTOP",
+      "browser": "Chrome",
+      "ip": "54.100.200.255"
+    }
+  },
+  "selector": {
+    "names": [
+      "banner1",
+      "pdp_rec1",
+      "pdp_rec2"
+    ]
+  },
+  "options": {
+    "isImplicitPageview": false,
+    "returnAnalyticsMetadata": false,
+    "isImplicitImpressionMode": true,
+    "isImplicitClientData": false
+  }
+}
+```
+
+### DY-2: Homepage Request (Single Selector)
+```json
+{
+  "user": {
+    "active_consent_accepted": true,
+    "dyid_server": "",
+    "dyid": ""
+  },
+  "session": {
+    "dy": ""
+  },
+  "context": {
+    "page": {
+      "type": "HOMEPAGE",
+      "data": [],
+      "location": "https://www.urbn.com/"
+    },
+    "device": {
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36",
+      "type": "DESKTOP",
+      "browser": "Chrome",
+      "ip": "54.100.200.255"
+    }
+  },
+  "selector": {
+    "names": [
+      "banner1"
+    ]
+  },
+  "options": {
+    "isImplicitPageview": false,
+    "returnAnalyticsMetadata": false,
+    "isImplicitImpressionMode": true,
+    "isImplicitClientData": false
+  }
+}
+```
+
+### DY-3: Product Page Request
+```json
+{
+  "user": {
+    "active_consent_accepted": true,
+    "dyid_server": "",
+    "dyid": ""
+  },
+  "session": {
+    "dy": ""
+  },
+  "context": {
+    "page": {
+      "type": "PRODUCT",
+      "data": ["wranglerwranchershadowpocketbootcutjean"],
+      "location": "https://www.urbn.com/"
+    },
+    "device": {
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36",
+      "type": "DESKTOP",
+      "browser": "Chrome",
+      "ip": "54.100.200.255"
+    }
+  },
+  "selector": {
+    "names": [
+      "pdp_rec1"
+    ]
+  },
+  "options": {
+    "isImplicitPageview": false,
+    "returnAnalyticsMetadata": false,
+    "isImplicitImpressionMode": true,
+    "isImplicitClientData": false
+  }
+}
+```
+
+### DY-4: Product Page Request (with recsProductData)
+```json
+{
+  "user": {
+    "active_consent_accepted": true,
+    "dyid_server": "",
+    "dyid": ""
+  },
+  "session": {
+    "dy": ""
+  },
+  "context": {
+    "page": {
+      "type": "PRODUCT",
+      "data": ["wranglerwranchershadowpocketbootcutjean"],
+      "location": "https://www.urbn.com/"
+    },
+    "device": {
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36",
+      "type": "DESKTOP",
+      "browser": "Chrome",
+      "ip": "54.100.200.255"
+    }
+  },
+  "selector": {
+    "names": [
+      "pdp_rec2"
+    ]
+  },
+  "options": {
+    "isImplicitPageview": false,
+    "returnAnalyticsMetadata": false,
+    "isImplicitImpressionMode": true,
+    "isImplicitClientData": false,
+    "recsProductData": {
+      "fieldFilter": [
+        "skusOnly"
+      ]
+    }
+  }
+}

@@ -284,6 +284,8 @@ func main() {
 	mux.HandleFunc("POST /translate/request/common-to-uo", commonToUoRequestHandler)
 	mux.HandleFunc("POST /translate/response/common-to-is", commonToIsResponseHandler)
 	mux.HandleFunc("POST /translate/response/is-to-common", isToCommonResponseHandler)
+	mux.HandleFunc("POST /translate/request/common-to-dy", commonToDyRequestHandler)
+	mux.HandleFunc("POST /translate/request/dy-to-common", dyToCommonRequestHandler)
 
 	slog.Info("Server starting", "port", 8080)
 
@@ -291,4 +293,119 @@ func main() {
 		slog.Error("Server failed to start", "error", err.Error())
 		os.Exit(1)
 	}
+}
+
+func commonToDyRequestHandler(w http.ResponseWriter, r *http.Request) {
+	start := time.Now()
+	w.Header().Set("Content-Type", "application/json")
+
+	var commonRequest utils.CommonRequestFormat
+	if err := json.NewDecoder(r.Body).Decode(&commonRequest); err != nil {
+		w.WriteHeader(http.StatusBadRequest)
+		json.NewEncoder(w).Encode(ErrorResponse{Error: "Invalid JSON"})
+
+		slog.Error("Common to DY request translation failed - invalid JSON",
+			"method", r.Method,
+			"path", r.URL.Path,
+			"remote_addr", r.RemoteAddr,
+			"user_agent", r.UserAgent(),
+			"status", 400,
+			"error", err.Error(),
+			"duration_ms", time.Since(start).Milliseconds(),
+		)
+		return
+	}
+
+	translator := &utils.CommonToDYRequestTranslator{}
+	dyRequest, err := translator.Translate(&commonRequest)
+	if err != nil {
+		w.WriteHeader(http.StatusInternalServerError)
+		json.NewEncoder(w).Encode(ErrorResponse{Error: err.Error()})
+
+		slog.Error("Common to DY request translation failed - translator error",
+			"method", r.Method,
+			"path", r.URL.Path,
+			"remote_addr", r.RemoteAddr,
+			"user_agent", r.UserAgent(),
+			"status", 500,
+			"error", err.Error(),
+			"user_id", commonRequest.User.ID,
+			"duration_ms", time.Since(start).Milliseconds(),
+		)
+		return
+	}
+
+	response := TranslationResponse{
+		Request:  commonRequest,
+		Response: dyRequest,
+	}
+	json.NewEncoder(w).Encode(response)
+
+	slog.Info("Common to DY request translation successful",
+		"method", r.Method,
+		"path", r.URL.Path,
+		"remote_addr", r.RemoteAddr,
+		"user_agent", r.UserAgent(),
+		"status", 200,
+		"user_id", commonRequest.User.ID,
+		"event_type", commonRequest.Event.Type,
+		"duration_ms", time.Since(start).Milliseconds(),
+	)
+}
+
+func dyToCommonRequestHandler(w http.ResponseWriter, r *http.Request) {
+	start := time.Now()
+	w.Header().Set("Content-Type", "application/json")
+
+	var dyRequest utils.DYChooseRequest
+	if err := json.NewDecoder(r.Body).Decode(&dyRequest); err != nil {
+		w.WriteHeader(http.StatusBadRequest)
+		json.NewEncoder(w).Encode(ErrorResponse{Error: "Invalid JSON"})
+
+		slog.Error("DY to Common request translation failed - invalid JSON",
+			"method", r.Method,
+			"path", r.URL.Path,
+			"remote_addr", r.RemoteAddr,
+			"user_agent", r.UserAgent(),
+			"status", 400,
+			"error", err.Error(),
+			"duration_ms", time.Since(start).Milliseconds(),
+		)
+		return
+	}
+
+	translator := &utils.DYToCommonRequestTranslator{}
+	commonRequest, err := translator.Translate(&dyRequest)
+	if err != nil {
+		w.WriteHeader(http.StatusInternalServerError)
+		json.NewEncoder(w).Encode(ErrorResponse{Error: err.Error()})
+
+		slog.Error("DY to Common request translation failed - translator error",
+			"method", r.Method,
+			"path", r.URL.Path,
+			"remote_addr", r.RemoteAddr,
+			"user_agent", r.UserAgent(),
+			"status", 500,
+			"error", err.Error(),
+			"user_id", dyRequest.User.Dyid,
+			"duration_ms", time.Since(start).Milliseconds(),
+		)
+		return
+	}
+
+	response := TranslationResponse{
+		Request:  dyRequest,
+		Response: commonRequest,
+	}
+	json.NewEncoder(w).Encode(response)
+
+	slog.Info("DY to Common request translation successful",
+		"method", r.Method,
+		"path", r.URL.Path,
+		"remote_addr", r.RemoteAddr,
+		"user_agent", r.UserAgent(),
+		"status", 200,
+		"user_id", dyRequest.User.Dyid,
+		"duration_ms", time.Since(start).Milliseconds(),
+	)
 }
